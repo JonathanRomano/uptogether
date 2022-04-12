@@ -61,18 +61,18 @@
 
 .icon {
   max-width: none;
-  filter: invert(70%);
+  filter: invert(60%);
   min-width: 20px;
-  max-width: 2vw;
-  max-height: 2vw;
+  max-width: 2.5vw;
+  max-height: 2.5vw;
   transition: .5s;
 }
 
 .icon:hover {
   max-width: none;
   filter: invert(100%);
-  max-width: 3vw;
-  max-height: 3vw;
+  max-width: 2.5vw;
+  max-height: 2.5vw;
   transition: .5s;
 }
 
