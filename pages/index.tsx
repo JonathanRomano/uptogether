@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import * as instagramLogo from '/public/instaLogo.png'
 import * as whatsappLogo from '/public/whatsappLogo.png'
 import * as linkedinLogo from '/public/linkedinLogo.png'
+import { AsyncLocalStorage } from 'async_hooks'
 
 export default function Home() {
 return (
@@ -44,10 +45,25 @@ return (
 							</a>
 						</Link>
 					</div>
+					<h3>Juntos vamos levar a sua empresa para o proximo nivel!</h3>
 				</div>
 				
 				<div className={styles.menu}>
-						menu
+						<Link href="/blog">
+							<a className={styles.menuItem}>
+								Blog
+							</a>
+						</Link>
+						<Link href="">
+							<a className={styles.menuItem}>
+								Sobre nós
+							</a>
+						</Link>
+						<Link href="">
+							<a className={styles.menuItem}>
+								Fale conosco
+							</a>
+						</Link>
 				</div>
 			</div>
 
