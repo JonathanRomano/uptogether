@@ -4,18 +4,25 @@
   flex: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  border: 1px solid white;
+  align-items: flex-start;
 }
 
 .titleBox {
-  padding-left: 15vw;
-  padding-bottom: 30vw;
-  border: solid 1px red;
+  padding: 0vw 5vw 10vw;
+  border: 1px solid red;
 }
 
 .title {
-  font-size: 5vw;
+  font-size: 6vw;
+  color: blue;
+}
+
+.menu {
+  padding: 5vw 15vw 15vw;
+  margin-left: 10vw;
+  align-self: flex-end;
+  border: 1px solid yellow;
 }
 
 .divisoria {
@@ -26,29 +33,29 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 15vw;
   min-width: 40vw;
-  border: solid 1px blue;
+  border: 1px solid blue;
+  padding: 0vw 15vw;
 }
 
 .box{
-  padding: 4rem;
+  padding: 0;
 }
 
 .icon {
   max-width: none;
-  filter: invert(100%);
-  min-width: 30px;
-  max-width: 3vw;
-  max-height: 3vw;
+  filter: invert(70%);
+  min-width: 20px;
+  max-width: 2vw;
+  max-height: 2vw;
   transition: .5s;
 }
 
 .icon:hover {
   max-width: none;
   filter: invert(100%);
-  max-width: 4vw;
-  max-height: 4vw;
+  max-width: 3vw;
+  max-height: 3vw;
   transition: .5s;
 }
 

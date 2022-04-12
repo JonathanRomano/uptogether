@@ -18,30 +18,36 @@ return (
 		<main>
 	
 			<div className={styles.main}>
-				<div className={styles.titleBox}>
-					<h1 className={styles.title}>
-						Up together
-					</h1>
+				<div>
+					<div className={styles.titleBox}>
+						<h1 className={styles.title}>
+							Up together
+						</h1>
+					</div>
+
+					<div className={styles.socialMediaBox}>
+						<Link href="">
+							<a className={styles.icon}>
+								<Image src={whatsappLogo}/>
+							</a>
+						</Link>
+
+						<Link href="">
+							<a className={styles.icon}>
+								<Image src={instagramLogo}/>
+							</a>
+						</Link>
+
+						<Link href="">
+							<a className={styles.icon}>
+								<Image src={linkedinLogo}/>
+							</a>
+						</Link>
+					</div>
 				</div>
-
-				<div className={styles.socialMediaBox}>
-					<Link href="">
-						<a className={styles.icon}>
-							<Image src={whatsappLogo}/>
-						</a>
-					</Link>
-
-					<Link href="">
-						<a className={styles.icon}>
-							<Image src={instagramLogo}/>
-						</a>
-					</Link>
-
-					<Link href="">
-						<a className={styles.icon}>
-							<Image src={linkedinLogo}/>
-						</a>
-					</Link>
+				
+				<div className={styles.menu}>
+						menu
 				</div>
 			</div>
 
