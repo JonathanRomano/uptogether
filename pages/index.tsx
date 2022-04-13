@@ -79,7 +79,7 @@ return (
 						A <strong>Up Together</strong> nasceu da necessidade de empresas de pequeno e médio porte  em entrar no mundo digital, <strong>a internet é o lugar mais movimentado do mundo</strong> e é pensando nisso que vamos ser a porta de entrada para que você possa <strong>se destacar em meio a concorrência</strong>. Acreditamos que a época em que apenas estar na internet era o suficiente ficou no passado, vamos levar a sua marca ao próximo nível, com excelência e qualidade.
 					</div>
 					<p>
-						"Não é apenas sobre estar na internet, e sim sobre <strong>destacar o seu negócio</strong> em um mundo novo e cheio de oportunidades."					
+					&ldquo;Não é apenas sobre estar na internet, e sim sobre <strong>destacar o seu negócio</strong> em um mundo novo e cheio de oportunidades.&rdquo;			
 					</p>
 				</div>
 
