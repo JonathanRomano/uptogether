@@ -75,9 +75,11 @@ return (
 				</div>
 
 				<div className={styles.textBox}>
-					Nós somos uma iniciativa nova que consiste em um grupo de profissionais qualificados que já se provaram no mercado. Vendo a dificuldade de empresas de pequeno e médio porte de entrar no mundo digital, decidimos unir forças para oferecer um serviço que traga resultados satisfatórios e que tenham um preço justo e acessível.
+					<div>
+						A <strong>Up Together</strong> nasceu da necessidade de empresas de pequeno e médio porte  em entrar no mundo digital, <strong>a internet é o lugar mais movimentado do mundo</strong> e é pensando nisso que vamos ser a porta de entrada para que você possa <strong>se destacar em meio a concorrência</strong>. Acreditamos que a época em que apenas estar na internet era o suficiente ficou no passado, vamos levar a sua marca ao próximo nível, com excelência e qualidade.
+					</div>
 					<p>
-						"Acreditamos que não é sobre estar na internet, mas sim sobre destacar o seu negócio no mundo digital!"
+						"Não é apenas sobre estar na internet, e sim sobre <strong>destacar o seu negócio</strong> em um mundo novo e cheio de oportunidades."					
 					</p>
 				</div>
 
@@ -87,12 +89,13 @@ return (
 						<h2>
 							Missão: 
 						</h2>
-						Incluir a sua empresa no mundo digital, oferecendo soluções de comunicação e gerando conteúdos com estratégias assertivas. Sempre alcançando resultados.					</div>
+					Alavancar o seu negócio no mundo digital, oferecendo soluções práticas e <strong>estratégias assertivas</strong>. Nosso foco é voltado para o seu resultado.				
+				</div>
 					<div>
 						<h2>
 							Visão: 
 						</h2>
-						Temos como objetivo conquistar o mundo com nossas soluções digitais, desenvolvendo estratégias/projetos que integrem a sua marca ao seu consumidor.
+						Nosso objetivo é que qualquer pessoa ou empresa tenha sua <strong>vida digital descomplicada</strong> e com uma <strong>assessoria</strong> de qualidade e confiança.
 					</div>
 					<div>
 						<h2>
