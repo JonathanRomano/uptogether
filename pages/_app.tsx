@@ -5,7 +5,6 @@ function MyApp({ Component, pageProps }) {
 		<Component {...pageProps} />
 		<style jsx global>{`
 				body{
-					background-color: black;
 					color: white  
 				}
 			`}
