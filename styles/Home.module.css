@@ -10,7 +10,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background: -webkit-linear-gradient(right,black,rgb(4, 4, 22));}
+  background: -webkit-linear-gradient(right,black,rgb(4, 4, 22));
+}
 
 .main h3{
   margin-top: 10vw;
@@ -133,6 +134,64 @@
 }
 .textBox2 h2 {
   text-align: center;
+}
+
+/* Seção fale conosco */
+
+.main3 {
+  min-height: 100vh;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  background: -webkit-linear-gradient(right,black,rgb(4, 4, 22));
+}
+
+.title3 {
+  font-size: 5vw;
+  text-align: left;
+  margin-left: 10vw;
+  background: -webkit-linear-gradient(right,rgb(13, 54, 141), #1b9ce7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.formBox{
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.box {
+  display: flex;
+}
+
+.p1 {
+  padding-top: 10vw;
+  padding-left: 5vw;
+}
+
+.button {
+  max-width: 10vw;
+  margin-left: 30vw;
+  margin-top: 1vw;
+}
+
+.formulario {
+  padding-left: 10vw;
+}
+
+.input{
+  background-color: white;
+  min-width: 30vw;
+  color: black;
+  border: none;
+}
+.input2{
+  min-height: 20vh;
+  min-width: 30vw;
+  background-color: white;
+  color: black;
+  border: none;
 }
 
 .footer {
