@@ -13,10 +13,16 @@ export default function Home() {
 		
 		const formData = new FormData(e.target)
 		const data = Object.fromEntries(formData)
+		
+		console.log(JSON.stringify(data))
 
-
-		const response = await fetch("/api/hello")
-		console.log(data)
+		const response = await fetch("/api/registrarmensagem",{
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(data)
+		})
 	}
 
 
