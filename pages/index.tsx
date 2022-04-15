@@ -47,11 +47,14 @@ export default function Home() {
 			},
 			body: JSON.stringify(data)
 		})
+
+		e.target.reset()
+
 		setButtonState(3)
 		setButtonPopupState(true)
 	}
 
-	const Teste = ({state}) => {
+	const ButtonForm = ({state}) => {
 		if (state === 1){
 			return <button className={styles.button} type='submit'>Enviar</button>
 		} else if (state === 2) {
@@ -182,7 +185,7 @@ export default function Home() {
 									<textarea className={styles.input2} name="mensage"/>
 
 								</div>
-								<Teste state={buttonState}/>
+								<ButtonForm state={buttonState}/>
 
 							</form>
 
