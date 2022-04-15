@@ -12,7 +12,24 @@ import ReactLoading from 'react-loading'
 export default function Home() {
 
 	const [ buttonState, setButtonState ] = useState(1)
+	const [ buttonPopupState, setButtonPopupState ] = useState(false)
 
+	const Popup = (props) => {
+		const closePopup = () => {
+			setButtonPopupState(false)
+		}
+		return (props.trigger) ? (
+			<div className={styles.popup}>
+				<div className={styles.inner}>
+					{ props.children }
+					
+					<button onClick={closePopup} className={styles.closeBtn}>Close</button>
+				</div>
+			</div>
+		) : ''
+	}
+
+	
 	const registrarMensagem = async (e) => {
 		setButtonState(2)
 
@@ -31,14 +48,14 @@ export default function Home() {
 			body: JSON.stringify(data)
 		})
 		setButtonState(3)
+		setButtonPopupState(true)
 	}
 
 	const Teste = ({state}) => {
 		if (state === 1){
 			return <button className={styles.button} type='submit'>Enviar</button>
-
 		} else if (state === 2) {
-			return <button className={styles.button}><ReactLoading className={styles.loading} type='bubbles' color='black'/></button>
+			return <button className={styles.button} type='button'><ReactLoading className={styles.loading} type='bubbles' color='black'/></button>
 		} else if (state === 3) {
 			return <button className={styles.button} disabled>Enviar</button>
 		}
@@ -81,7 +98,7 @@ export default function Home() {
 								</a>
 							</Link>
 						</div>
-						<h3>Juntos vamos levar a sua empresa para o proximo nivel!</h3>
+						<h3>Juntos vamos levar a sua empresa para o próximo nível!</h3>
 					</div>
 					
 					<div className={styles.menu}>
@@ -166,6 +183,7 @@ export default function Home() {
 
 								</div>
 								<Teste state={buttonState}/>
+
 							</form>
 
 							<p className={styles.p1}>
@@ -177,6 +195,10 @@ export default function Home() {
 				</div>
 
 			</main>
+
+			<Popup trigger={buttonPopupState}>
+				Okay, agora a gente vai entrar em contato quando der na telha, muito brigado valeu e tchau!
+			</Popup>
 
 			<footer className={styles.footer}>
 				<a
