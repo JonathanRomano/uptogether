@@ -26,7 +26,7 @@ export default function Home() {
 					<button onClick={closePopup} className={styles.closeBtn}>Close</button>
 				</div>
 			</div>
-		) : ''
+		) : <></>
 	}
 
 	
