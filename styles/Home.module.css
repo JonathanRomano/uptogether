@@ -174,7 +174,16 @@
   max-width: 10vw;
   margin-left: 30vw;
   margin-top: 1vw;
+  width: 4vw;
+  height: 2vw;
+  display: flex;
+  justify-content: center;
 }
+.loading{
+  max-width: 2vw;
+  max-height: 2vw;
+}
+
 
 .formulario {
   padding-left: 10vw;

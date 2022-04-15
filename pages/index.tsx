@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import * as instagramLogo from '/public/instaLogo.png'
 import * as whatsappLogo from '/public/whatsappLogo.png'
 import * as linkedinLogo from '/public/linkedinLogo.png'
+import React from 'react';
 import { useState } from 'react'
 import ReactLoading from 'react-loading'
 
@@ -29,14 +30,17 @@ export default function Home() {
 			},
 			body: JSON.stringify(data)
 		})
+		setButtonState(3)
 	}
 
 	const Teste = ({state}) => {
 		if (state === 1){
 			return <button className={styles.button} type='submit'>Enviar</button>
 
-		} else {
-			return <p> VALEU PARCEIRO ROUBEI SEUS DADOS KKKKK </p>
+		} else if (state === 2) {
+			return <button className={styles.button}><ReactLoading className={styles.loading} type='bubbles' color='black'/></button>
+		} else if (state === 3) {
+			return <button className={styles.button} disabled>Enviar</button>
 		}
 	}
 
