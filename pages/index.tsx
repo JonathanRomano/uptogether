@@ -5,10 +5,16 @@ import styles from '../styles/Home.module.css'
 import * as instagramLogo from '/public/instaLogo.png'
 import * as whatsappLogo from '/public/whatsappLogo.png'
 import * as linkedinLogo from '/public/linkedinLogo.png'
+import { useState } from 'react'
+import ReactLoading from 'react-loading'
 
 export default function Home() {
 
+	const [ buttonState, setButtonState ] = useState(1)
+
 	const registrarMensagem = async (e) => {
+		setButtonState(2)
+
 		e.preventDefault()
 		
 		const formData = new FormData(e.target)
@@ -25,6 +31,14 @@ export default function Home() {
 		})
 	}
 
+	const Teste = ({state}) => {
+		if (state === 1){
+			return <button className={styles.button} type='submit'>Enviar</button>
+
+		} else {
+			return <p> VALEU PARCEIRO ROUBEI SEUS DADOS KKKKK </p>
+		}
+	}
 
 	return (
 		<div className={styles.container}>
@@ -145,8 +159,9 @@ export default function Home() {
 									</div>
 									<p>Sua mensagem</p>
 									<textarea className={styles.input2} name="mensage"/>
-									<button className={styles.button} type='submit'>Enviar</button>
+
 								</div>
+								<Teste state={buttonState}/>
 							</form>
 
 							<p className={styles.p1}>
