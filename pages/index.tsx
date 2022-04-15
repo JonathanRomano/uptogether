@@ -176,16 +176,16 @@ export default function Home() {
 								<div className={styles.formBox}>
 									<div>
 										<p>Seu nome</p>
-										<input className={styles.input} type="text" name="name"/> <br/>
+										<input className={styles.input} type="text" name="name" required/> <br/>
 									
 										<p>Email profisional</p>
-										<input className={styles.input} type="email" name="email"/>
+										<input className={styles.input} type="email" name="email" required/>
 									</div>
 									<p>Sua mensagem</p>
-									<textarea className={styles.input2} name="mensage"/>
+									<textarea className={styles.input2} name="mensage" required/>
 
+									<ButtonForm state={buttonState}/>
 								</div>
-								<ButtonForm state={buttonState}/>
 
 							</form>
 

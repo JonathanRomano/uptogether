@@ -227,6 +227,7 @@
   background-color: white;
   color: black;
   border: none;
+  resize: none;
 }
 
 .footer {
