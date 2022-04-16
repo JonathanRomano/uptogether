@@ -12,7 +12,7 @@ import ReactLoading from 'react-loading'
 export default function Home() {
 
 	const [ buttonState, setButtonState ] = useState(1)
-	const [ buttonPopupState, setButtonPopupState ] = useState(true)
+	const [ buttonPopupState, setButtonPopupState ] = useState(false)
 
 	const Popup = (props) => {
 		const closePopup = () => {
