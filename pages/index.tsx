@@ -12,7 +12,7 @@ import ReactLoading from 'react-loading'
 export default function Home() {
 
 	const [ buttonState, setButtonState ] = useState(1)
-	const [ buttonPopupState, setButtonPopupState ] = useState(false)
+	const [ buttonPopupState, setButtonPopupState ] = useState(true)
 
 	const Popup = (props) => {
 		const closePopup = () => {
@@ -83,19 +83,19 @@ export default function Home() {
 						</div>
 
 						<div className={styles.socialMediaBox}>
-							<Link href="/">
+							<Link href="https://api.whatsapp.com/send?phone=5541996392002&text=Ol%c3%a1%2c+gostaria+de+saber+mais+sobre+a+Up+Together%2c+podemos+agendar+uma+reuni%c3%a3o%3f">
 								<a className={styles.icon}>
 									<Image src={whatsappLogo}/>
 								</a>
 							</Link>
 
-							<Link href="/">
+							<Link href="https://www.instagram.com/_uptogether/">
 								<a className={styles.icon}>
 									<Image src={instagramLogo}/>
 								</a>
 							</Link>
 
-							<Link href="/">
+							<Link href="https://www.linkedin.com/company/up-together-assessoria-digital/">
 								<a className={styles.icon}>
 									<Image src={linkedinLogo}/>
 								</a>
@@ -121,6 +121,26 @@ export default function Home() {
 								</a>
 							</Link>
 					</div>
+
+					<div className={styles.socialMediaBoxMobile}>
+							<Link href="https://api.whatsapp.com/send?phone=5541996392002&text=Ol%c3%a1%2c+gostaria+de+saber+mais+sobre+a+Up+Together%2c+podemos+agendar+uma+reuni%c3%a3o%3f">
+								<a className={styles.icon}>
+									<Image src={whatsappLogo}/>
+								</a>
+							</Link>
+
+							<Link href="https://www.instagram.com/_uptogether/">
+								<a className={styles.icon}>
+									<Image src={instagramLogo}/>
+								</a>
+							</Link>
+
+							<Link href="https://www.linkedin.com/company/up-together-assessoria-digital/">
+								<a className={styles.icon}>
+									<Image src={linkedinLogo}/>
+								</a>
+							</Link>
+						</div>
 				</div>
 
 				<div className={styles.main2} id="about">

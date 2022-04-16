@@ -65,6 +65,10 @@
   padding: 0vw 10vw;
 }
 
+.socialMediaBoxMobile{
+  display: none;
+}
+
 .icon {
   max-width: none;
   filter: invert(60%);
@@ -191,7 +195,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 10, 0.5);
 
   display: flex;
   justify-content: center;
@@ -203,11 +207,11 @@
   width: 100%;
   max-width: 400px;
   background-color: black;
-  border: solid 10px red
+  border: solid 1px rgb(13, 54, 141)
 }
 .closeBtn {
   position: absolute;
-  top: 6px;
+  bottom: 6px;
   right: 6px;
 }
 
@@ -238,4 +242,262 @@
   justify-content: center;
   align-items: center;
   background-color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  .container{
+    background: black;
+  }
+  
+  /* Seção inicial */
+  
+  .main {
+    min-height: 150vh;
+    display: flex;
+    padding: 35vw 5vw 5vw 5vw;
+    flex-direction: column;
+    align-items: center;
+    background: -webkit-linear-gradient(right,black,rgb(4, 4, 22));
+  }
+  
+  .main h3{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 4vw;
+    max-width: 70vw;
+  }
+  
+  .titleBox {
+    padding: 0vw 2vw 0vw;
+    justify-self: center;
+  }
+  
+  .title {
+    font-size: 9vw;
+    text-align: center;
+    background: -webkit-linear-gradient(right,rgb(13, 54, 141), #1b9ce7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .menu {
+    padding: 10vh 0 0 0;
+    width: 100%;
+    max-width: 90%;
+    margin: 0;
+
+    margin-top: 10vh;
+    margin-bottom: 5vw;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+
+  }
+  
+  .menuItem{
+    margin: 1vw;
+    font-size: 5vw;
+    border-bottom: solid 1px #d9d9d9;
+    text-align: end;
+  }
+  
+  .socialMediaBox {
+    display: none;
+  }
+  .socialMediaBoxMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 50vw;
+    margin-top: 5vh;
+  }
+
+  
+  .icon {
+    max-width: none;
+    filter: invert(60%);
+    min-width: 20px;
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    transition: .5s;
+  }
+  
+  .icon:hover {
+    max-width: none;
+    filter: invert(100%);
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    transition: .5s;
+  }
+  
+  /* Seção sobre */
+  /*   border:rgb(94, 9, 105) 1px solid; */
+  .main2 {
+    min-height: 150vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: -webkit-linear-gradient(right,black,rgb(4, 4, 22));
+  }
+  
+  .title2{
+    text-align: end;
+    font-size: 5vh;
+    background: -webkit-linear-gradient(left,rgb(13, 54, 141), #1b9ce7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .titleBox2{
+    color: #d9d9d9;
+    text-align: right;
+    align-self: flex-end;
+    padding-right: 15vw;
+    margin-top: -2vw;
+  }
+  .textBox {
+    align-self: center;
+    max-width: 90vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+    font-size: 15px;
+    margin-bottom: 10vh;
+  }
+  .textBox p {
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+
+  }
+  
+  .textBox2 {
+    align-self: center;
+    max-width: 90vw;
+    padding-top: 2vh;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50vh;
+  }
+  
+  .textBox2 div{
+    padding: 2vw;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid white;
+
+  }
+  .textBox2 h2 {
+    text-align: center;
+  }
+  
+  /* Seção fale conosco */
+  
+  .main3 {
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: -webkit-linear-gradient(right,black,rgb(4, 4, 22));
+  }
+  
+  .title3 {
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 10vw;
+    font-size: 4vh;
+    max-width: 60vw;
+    background: -webkit-linear-gradient(right,rgb(13, 54, 141), #1b9ce7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .formBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  
+  .box {
+    display: flex;
+  }
+  
+  .p1 {
+    padding-top: 10vw;
+    padding-left: 5vw;
+    display: none;
+  }
+  
+  .button {
+    max-width: none;
+    margin-left: 30vw;
+    margin-top: 1vw;
+    width: 8vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+  }
+  
+  .loading{
+    max-width: none;
+    max-height: none;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 10, 0.5);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner {
+    position: relative;
+    padding: 35px;
+    width: 100%;
+    max-width: 300px;
+    background-color: black;
+    border: solid 1px rgb(13, 54, 141)
+  }
+  .closeBtn {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+  }
+  
+  .formulario {
+    padding-left: 10vw;
+  }
+  
+  .input{
+    background-color: white;
+    min-width: 80vw;
+    color: black;
+    border: none;
+  }
+  .input2{
+    min-height: 20vh;
+    min-width: 30vw;
+    background-color: white;
+    color: black;
+    border: none;
+    resize: none;
+  }
+  
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #d9d9d9;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
 }
